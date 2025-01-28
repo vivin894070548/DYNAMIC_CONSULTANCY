@@ -552,16 +552,12 @@
 	            </div> 
 
                <div class="form-field">
-                  <button class="submitform">Submit</button>
-
-                  <div id="submit-loader">
-                     <div class="text-loader">Sending...</div>                             
-       			      <div class="s-loader">
-							  	<div class="bounce1"></div>
-							  	<div class="bounce2"></div>
-							  	<div class="bounce3"></div>
-							</div>
-						</div>
+  				<button class="submitform" onclick="document.querySelector('#success-message').style.display = 'block';">
+    					Submit
+ 				 </button>
+ 				 <p id="success-message" style="display: none; color: green;">
+   					 <i class="fa fa-check"></i> Your message was sent, thank you!
+				  </p>
                </div>
 
       		</form> <!-- end form -->
